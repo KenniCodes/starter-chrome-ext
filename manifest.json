@@ -1,0 +1,10 @@
+{
+  "manifest_version": 1,
+  "name": "Keyword Replacer",
+  "description": "Replace specific keywords with images",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icons/format_shapes_FILL0_wght400_GRAD0_opsz24.png"
+  }
+}
