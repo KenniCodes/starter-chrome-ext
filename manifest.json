@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 3,
   "name": "Keyword Replacer",
   "description": "Replace specific keywords with images",
   "version": "1.0",
