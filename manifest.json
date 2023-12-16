@@ -4,7 +4,22 @@
   "description": "Replace specific keywords with images",
   "version": "1.0",
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": "assets/icons/format_shapes_FILL0_wght400_GRAD0_opsz24.png"
-  }
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/format_shapes_FILL0_wght400_GRAD0_opsz24.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+        "resources": ["images/*"],
+        "matches": ["<all_urls>"]
+    }
+]
 }
